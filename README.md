@@ -2,6 +2,8 @@
 
 <p align="center"> a RockyHuas Weather SDK 2.0.</p>
 
+[![Build Status](https://travis-ci.org/RockyHuas/weather.svg?branch=master)](https://travis-ci.org/RockyHuas/weather)
+
 
 ## Installing
 
