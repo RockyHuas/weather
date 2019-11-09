@@ -1,6 +1,6 @@
 <h1 align="center"> weather </h1>
 
-<p align="center"> a RockyHuas Weather SDK.</p>
+<p align="center"> a RockyHuas Weather SDK 2.0.</p>
 
 
 ## Installing
