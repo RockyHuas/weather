@@ -1,10 +1,14 @@
 <?php
-/**
- * Created by RockyHuas.
- * User: Huangzb
- * Date: 2019/11/8
- * Time: 16:33
+
+/*
+ * This file is part of the rocky-huas/weather.
+ *
+ * (c) RockyHuas <1169078896@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
+
 namespace RockyHuas\Weather;
 
 use GuzzleHttp\Client;
@@ -14,6 +18,7 @@ use RockyHuas\Weather\Exceptions\InvalidArgumentException;
 class Weather
 {
     protected $key;
+
     protected $guzzleOptions = [];
 
     public function __construct(string $key)
@@ -43,12 +48,11 @@ class Weather
             throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
-
         $query = array_filter([
             'key' => $this->key,
             'city' => $city,
             'output' => $format,
-            'extensions' =>  $type,
+            'extensions' => $type,
         ]);
 
         try {
